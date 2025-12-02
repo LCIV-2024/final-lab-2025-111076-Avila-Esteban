@@ -1,7 +1,7 @@
 -- Carga inicial de palabras para el juego Hangman
 -- Palabras de al menos 10 caracteres en español
 
-INSERT INTO words (palabra, utilizada) VALUES 
+INSERT IGNORE INTO words (palabra, utilizada) VALUES
 ('PROGRAMADOR', false),
 ('COMPUTADORA', false),
 ('TECNOLOGIA', false),
@@ -23,7 +23,7 @@ INSERT INTO words (palabra, utilizada) VALUES
 ('DISTRIBUCION', false),
 ('ORGANIZACION', false);
 
-INSERT INTO players (nombre, fecha) VALUES 
+INSERT IGNORE INTO players (nombre, fecha) VALUES
 ('Juan Pérez', '2025-01-15'),
 ('María Gómez', '2025-01-16');
 
